@@ -1,3 +1,78 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// You can use Sass (SCSS) here: http://sass-lang.com//
+
+h1 {
+	font-family: "Alef", Tahoma, sans-serif;
+	color: #0082B4;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 20px;
+	font-size: 48px;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #93B7BE;
+	font-family: "Alef", Tahoma, sans-serif;
+	text-align: center;
+	margin: 40px 0;
+}
+
+body {
+	background-color: #FEFFFE;
+}
+
+.navbar {
+	background-color: #D7DAE5;
+	font-family: Tahoma;
+	text-transform: uppercase;
+	border: 0;
+	letter-spacing: 2px;
+	
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #50514F;
+}
+
+
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #0082B4;
+}
+
+
+a {
+	color: #50514F;
+}
+
+
+a:hover {
+	color: #0082B4;
+}
+
+.projectName {
+	font-size: 25px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	letter-spacing: 3px;
+}
+
+img {
+	width: 40%;
+	margin: 0 30%;
+	
+}
+
+footer {
+	text-align: center;
+	color: #50514F;
+	background-color: #0082B4;
+	font-weight: 800;
+	height: 100px;
+}
+
+.footer-copyright p {
+	padding-top: 30px;
+}
