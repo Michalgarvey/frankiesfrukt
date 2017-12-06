@@ -13,7 +13,7 @@
 
   <body>
 
-  	
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid"><!--nav container-->
@@ -25,15 +25,15 @@
             <span class="icon-bar"></span>
           </button>
 
-          
+
         </div><!--end navbar-header-->
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#other">Other</a></li>
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", simple_pages_about_path %></li>
+            <li><%= link_to "Contact", simple_pages_contact_path %></li>
+            <li><%= link_to "Other", simple_pages_other_path %></li>
           </ul>
         </div><!--end navbar-collapse collapse-->
       </div><!--end container fluid-->

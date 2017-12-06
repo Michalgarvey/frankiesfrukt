@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'simple_pages/other'
+
   get 'simple_pages/about'
 
   get 'simple_pages/contact'

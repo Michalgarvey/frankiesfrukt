@@ -29,7 +29,7 @@ body {
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
-	
+
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -62,7 +62,7 @@ a:hover {
 img {
 	width: 40%;
 	margin: 0 30%;
-	
+
 }
 
 footer {
@@ -71,8 +71,15 @@ footer {
 	background-color: #0082B4;
 	font-weight: 800;
 	height: 100px;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }
 
 .footer-copyright p {
 	padding-top: 30px;
+}
+
+p {
+	margin: 0 50px;
 }
