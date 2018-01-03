@@ -1,4 +1,7 @@
 <h2>Featured Product:</h2>
 <%= @featured_product.name %>
+<% if @featured_product.name.blank? %>
+  <%= @featured_product.name %>
+<% end %>
 <%= @featured_product.image_url %>
 <%= @featured_product.description %>
