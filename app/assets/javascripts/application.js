@@ -14,3 +14,16 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 59.312, lng: 18.061},
+    zoom: 13
+  });
+  var marker = new google.maps.Marker({
+          position: {lat:59.309, lng: 18.073},
+          map: map
+        });
+}
