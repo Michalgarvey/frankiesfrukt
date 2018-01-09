@@ -1,0 +1,214 @@
+/* line 5, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/products.scss */
+h2 {
+  padding-top: 35px;
+}
+/* line 1, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding-bottom: 100px;
+}
+
+/* line 11, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 17, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 45, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 50, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 54, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 60, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 67, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 77, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 83, /Users/michalgarvey/Documents/stockholmcykel/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: "Alef", Tahoma, sans-serif;
+  color: #0082B4;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+/* line 15, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  color: #93B7BE;
+  font-family: "Alef", Tahoma, sans-serif;
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* line 22, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+body {
+  background-image: url("background.jpg");
+}
+
+/* line 26, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  background-color: #424753;
+  font-family: Tahoma;
+  text-transform: uppercase;
+  border: 0;
+  letter-spacing: 2px;
+}
+
+/* line 34, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #D7DAE5;
+}
+
+/* line 39, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #0082B4;
+}
+
+/* line 43, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #D7DAE5;
+}
+
+/* line 47, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+a {
+  color: #50514F;
+}
+
+/* line 52, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  color: #0082B4;
+}
+
+/* line 56, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.projectName {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  letter-spacing: 3px;
+}
+
+/* line 64, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+img {
+  width: 40%;
+  margin: 0 30%;
+}
+
+/* line 70, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+footer {
+  text-align: center;
+  color: #50514F;
+  background-color: #0082B4;
+  font-weight: 800;
+  height: 80px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+/* line 82, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.footer-copyright p {
+  padding-top: 30px;
+}
+
+/* line 86, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+p {
+  margin: 0 50px;
+}
+
+/* line 90, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.contactpage p {
+  text-align: center;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
