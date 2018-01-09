@@ -20,11 +20,11 @@ h2 {
 }
 
 body {
-	background-color: #FEFFFE;
+	background-image: url("background.jpg");
 }
 
 .navbar {
-	background-color: #D7DAE5;
+	background-color: #424753;
 	font-family: Tahoma;
 	text-transform: uppercase;
 	border: 0;
@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #50514F;
+	color: #D7DAE5;
 }
 
 
@@ -40,6 +40,9 @@ body {
 	color: #0082B4;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #D7DAE5;
+}
 
 a {
 	color: #50514F;
@@ -69,7 +72,7 @@ footer {
 	color: #50514F;
 	background-color: #0082B4;
 	font-weight: 800;
-	height: 100px;
+	height: 80px;
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
@@ -82,4 +85,8 @@ footer {
 
 p {
 	margin: 0 50px;
+}
+
+.contactpage p {
+	text-align: center;
 }
