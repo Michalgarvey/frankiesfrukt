@@ -20,7 +20,7 @@ h2 {
 }
 
 body {
-	background-image: url("background.jpg");
+	background-image: image-url("background.jpg");
 }
 
 .navbar {
@@ -90,3 +90,18 @@ p {
 .contactpage p {
 	text-align: center;
 }
+
+.projectName {
+	font-family: 'Cookie', cursive;
+	color: #0082B4;
+	padding-top: 10px;
+	text-transform: none;
+	font-weight: 800;
+	font-size: 55px;
+	letter-spacing: 7px;
+
+}
+
+a:visited {
+    color: #0082B4;
+	}

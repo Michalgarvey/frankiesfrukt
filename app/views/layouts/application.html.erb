@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Frankie's Frukt</title>
-    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -25,12 +25,14 @@
             <span class="icon-bar"></span>
           </button>
 
+          <div class="projectName">
+            <%= link_to "Frankie's Frukt", root_path %>
+          </div>
 
         </div><!--end navbar-header-->
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home", root_path %></li>
             <li><%= link_to "About Frankie", simple_pages_about_path %></li>
             <li><%= link_to "Contact Frankie", simple_pages_contact_path %></li>
             <li><%= link_to "Shop", products_path %></li>
