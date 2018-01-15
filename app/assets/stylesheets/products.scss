@@ -2,6 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h2 {
+h2, h1 {
   padding-top: 35px;
+}
+
+
+input {
+  background-color: #93B7BE;
+  color: #50514F;
+  padding: 0;
+  border: 0;
+  border-radius: 0.3em;
+}
+
+textarea {
+  background-color: #93B7BE;
+  color: #50514F;
+  padding: 0;
+  border: 0;
+  border-radius: 0.3em;
+}
+
+label {
+  color: #0082B4;
+  font: verdana, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.formrows {
+  margin-left: 100px;
 }

@@ -11,32 +11,51 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :product_name %>
-  </div>
+  <div class="formrows">
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :product_description %>
-  </div>
 
-  <div class="field">
-    <%= form.label :image_url %>
-    <%= form.text_field :image_url, id: :product_image_url %>
-  </div>
+      <div class="field">
+        <%= form.label :name %>
+        <%= form.text_field :name, id: :product_name %>
+      </div>
 
-  <div class="field">
-    <%= form.label :colour %><br>
-    <%= form.text_field :colour, id: :product_colour %>
-  </div>
+      <div class="field">
+        <%= form.label :description %>
+        <%= form.text_area :description, id: :product_description %>
+      </div>
 
-  <div class="field">
-    <%= form.label :price %><br>
-    <%= form.text_field :price, id: :product_price %>
-  </div>
+      <div class="field">
+        <%= form.label :image_url %>
+        <%= form.text_field :image_url, id: :product_image_url %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+      <div class="field">
+        <%= form.label :colour %><br>
+        <%= form.text_field :colour, id: :product_colour %>
+      </div>
+
+      <div class="field">
+        <%= form.label :country_of_Origin %>
+        <%= form.text_field :country_of_Origin %>
+      </div>
+
+      <div class="field">
+        <%= form.label :season %>
+        <%= form.text_field :season %>
+      </div>
+
+      <div class="field">
+        <%= form.label :price %><br>
+        <%= form.text_field :price, id: :product_price %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit %>
+      </div>
+
+
+  </div><!--formrows-->
+
+
+
 <% end %>

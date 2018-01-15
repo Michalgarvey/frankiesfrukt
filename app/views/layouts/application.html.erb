@@ -29,6 +29,16 @@
             <%= link_to "Frankie's Frukt", root_path %>
           </div>
 
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+            <%= form.label :q, 'Search:' %>
+            <%= form.text_field :q, id: 'q', value: params[:q] %>
+            <%= form.submit 'Search' %>
+          <% end %>
+        </div><!--form-group-->
+      </form>
+
         </div><!--end navbar-header-->
 
         <div class="navbar-collapse collapse">
