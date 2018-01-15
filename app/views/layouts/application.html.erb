@@ -28,17 +28,6 @@
           <div class="projectName">
             <%= link_to "Frankie's Frukt", root_path %>
           </div>
-
-      <form class="navbar-form navbar-right">
-        <div class="form-group">
-          <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-            <%= form.label :q, 'Search for:' %>
-            <%= form.text_field :q, id: 'q', value: params[:q] %>
-            <%= form.submit 'Search' %>
-          <% end %>
-        </div><!--form-group-->
-      </form>
-
         </div><!--end navbar-header-->
 
         <div class="navbar-collapse collapse">
@@ -47,6 +36,15 @@
             <li><%= link_to "Contact Frankie", simple_pages_contact_path %></li>
             <li><%= link_to "Shop", products_path %></li>
             <li><%= link_to "Other", simple_pages_other_path %></li>
+            <li>
+              <form class="form-group">
+                <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+                  <%= form.label :q, 'Search:' %>
+                  <%= form.text_field :q, id: 'q', value: params[:q] %>
+                  <%= submit_tag("Search", class: "btn btn-primary") %>
+                <% end %>
+              </form><!--form-group-->
+            </li>
           </ul>
         </div><!--end navbar-collapse collapse-->
       </div><!--end container fluid-->
