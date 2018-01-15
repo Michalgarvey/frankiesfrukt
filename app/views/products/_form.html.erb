@@ -11,40 +11,42 @@
     </div>
   <% end %>
 
-  <div class="formrows">
+  <div class="row">
+    <div class='col-md-3'></div>
+    <div class='col-md-6'>
 
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :name %>
-        <%= form.text_field :name, id: :product_name %>
+        <%= form.text_field :name, id: :product_name, class: 'form-control' %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :description %>
         <%= form.text_area :description, id: :product_description %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :image_url %>
         <%= form.text_field :image_url, id: :product_image_url %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :colour %><br>
         <%= form.text_field :colour, id: :product_colour %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :country_of_Origin %>
         <%= form.text_field :country_of_Origin %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :season %>
         <%= form.text_field :season %>
       </div>
 
-      <div class="field">
+      <div class="form-group">
         <%= form.label :price %><br>
         <%= form.text_field :price, id: :product_price %>
       </div>
@@ -53,8 +55,8 @@
         <%= form.submit %>
       </div>
 
-
-  </div><!--formrows-->
+    </div><!--col-md-4-->
+  </div><!--row-->
 
 
 

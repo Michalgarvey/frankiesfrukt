@@ -12,7 +12,7 @@
 
 <p>
   <strong>Image url:</strong>
-  <%= @product.image_url %>
+  <%= link_to image_tag @product.image_url, class: "img-responsive" %>
 </p>
 
 <p>
@@ -22,12 +22,12 @@
 
 <p>
   <strong>country_of_Origin:</strong>
-  <%= @product.country_of_Origin %>
+
 </p>
 
 <p>
   <strong>Season:</strong>
-  <%= @product.season %>
+
 </p>
 
 <p>
