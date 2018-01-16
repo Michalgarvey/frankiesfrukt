@@ -3,6 +3,36 @@
 <p>Location: SoFo, Stockholm<br>Email: Frankie@frukt.se<br>Phone: 0409 24 63 75</p>
 <br><p>We currently deliver to the greater Stockholmn area.  We are always looking to expand, so if you're outside of our areas, please get in touch and let us know where we can find you.</p><br><br><br>
 
+<div class="col-sm-2 col-lg-3">
+</div>
+  <div class="col-sm-8 col-lg-6">
+<h2>Get in Touch</h2>
+<%= flash[:notice] %>
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+  </div>
+</div>
+<br>
+<%= form.submit "Send", class: "form_label" %>
+<% end %>
+</div>
+<div class="col-sm-2">
+</div>
+
+
 <div class="map">
   <iframe class="map" width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAMwRCtEHK9M1LV-HAxeWlhM5RrP9-0aJ0&zoom=12&center=59.3118%2C18.0663" allowfullscreen></iframe>
 </div>
