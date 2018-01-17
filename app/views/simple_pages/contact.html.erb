@@ -12,17 +12,17 @@
 <div class="row">
   <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+    <%= form.text_field :name, class: "form-control", required: true, placeholder: "Enter Name" %>
   </div>
   <br>
   <div class="form-group">
     <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+    <%= form.email_field :email, class: "form-control", type:'email', required: true, placeholder: "Enter Email" %>
   </div>
   <br>
   <div class="form-group">
     <%= form.label :message %>
-    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+    <%= form.text_area :message, class: "form-control", required: true, minlength: 20, maxlength: 250, placeholder: "Enter Message", rows: 5 %>
   </div>
 </div>
 <br>
