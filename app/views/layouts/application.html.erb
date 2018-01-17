@@ -13,6 +13,8 @@
 
   <body>
 
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -44,6 +46,18 @@
               <% end %>
             </li>
           </ul>
+          <ul class="nav pull-right">
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', logout_path, method: :delete) %>
+              <% else %>
+                <%= link_to('Login', login_path) %>
+              <% end %>
+            </li>
+          </ul>
+
+
+
         </div><!--end navbar-collapse collapse-->
       </div><!--end container fluid-->
     </nav>
