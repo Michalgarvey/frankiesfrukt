@@ -28,6 +28,20 @@ Rails.application.routes.draw do
     delete 'logout', to: 'devise/sessions#destroy'
   end
 
+  devise_scope :user do
+    get 'users/new', to: 'devise/registrations#create'
+  end
+
+  devise_scope :user do
+    post 'login', to: 'devise/sessions#create'
+  end
+
+  devise_scope :user do
+    post 'users/new.user', to: 'devise/registrations#create'
+  end
+
+
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
