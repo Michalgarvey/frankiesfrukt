@@ -12,7 +12,8 @@
   </head>
 
   <body>
-
+    <div class="content">
+        <div class="content-inside">
     <% if notice %>
       <p class="notice notice-info"><%= notice %></p>
     <% end %>
@@ -68,8 +69,9 @@
 
     <%= yield %>
 
-
-    <footer>
+  </div>
+    </div>
+    <footer class="footer">
       <div class="footer-copyright">
         <p>&copy; Frankie's Frukt &<br>Michal Garvey 2017</p>
       </div>

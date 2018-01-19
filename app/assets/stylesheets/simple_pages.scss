@@ -61,26 +61,20 @@ a:hover {
 	letter-spacing: 3px;
 }
 
-img {
-	width: 40%;
-	margin: 0 30%;
-
-}
-
 footer {
 	text-align: center;
 	color: #50514F;
 	background-color: #0082B4;
 	font-weight: 800;
 	height: 80px;
-	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
+	margin-top: -50px;
 }
 
 .footer-copyright p {
-	padding-top: 30px;
+	padding-top: 22px;
 }
 
 p {
@@ -118,4 +112,16 @@ form {
 
 .nav>li>a {
 	padding: 25px 15px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
 }
