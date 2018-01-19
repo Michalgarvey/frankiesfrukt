@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', controllers: { registrations: "user_registrations" } }
   resources :users
   get 'simple_pages/landing_page'
 
@@ -20,25 +20,7 @@ Rails.application.routes.draw do
   post 'simple_pages/thank_you'
 
 
-  devise_scope :user do
-    get 'login', to: 'devise/sessions#new'
-  end
 
-  devise_scope :user do
-    delete 'logout', to: 'devise/sessions#destroy'
-  end
-
-  devise_scope :user do
-    get 'users/new', to: 'devise/registrations#create'
-  end
-
-  devise_scope :user do
-    post 'login', to: 'devise/sessions#create'
-  end
-
-  devise_scope :user do
-    post 'users/new.user', to: 'devise/registrations#create'
-  end
 
 
 
