@@ -36,14 +36,16 @@
   <strong><%= @product.price %></strong>
 </p>
 
-<p>
-  <%= @product.highest_rating_comment %>
-</p>
+<% if @product.comments %>
 
-<p>
-  <%= @product.lowest_rating_comment %>
-</p>
+  <p>
+    <%= @product.highest_rating_comment %>
+  </p>
 
+  <p>
+    <%= @product.lowest_rating_comment %>
+  </p>
+<% end %>
 
 <div class='pull-right'>
 <%= link_to 'Edit', edit_product_path(@product) %> |
