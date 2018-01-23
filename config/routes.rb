@@ -19,6 +19,10 @@ Rails.application.routes.draw do
 
   post 'simple_pages/thank_you'
 
+  resources :products do
+    resources :comments 
+  end
+
 
 
 
