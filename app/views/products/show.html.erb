@@ -41,23 +41,22 @@
     <div class="col-sm-12 col-md-3">
 
       <h3>Reviews of <%= @product.name %></h3>
-      <% if @product.comments %>
+
 
         <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div>
         </p>
-        <% if @product.comments %>
+
           <p>
             <%= @product.highest_rating_comment %>
           </p>
-
           <p>
             <%= @product.lowest_rating_comment %>
           </p>
-        <% end %>
-      <% end %>
 
 
       <%= render 'comments' %>
+
+      <%= will_paginate @comments %>
 
     </div><!--col-sm-12 col-md-4-->
 
