@@ -47,9 +47,9 @@
         </p>
 
         <% if @product.comments %>
-  <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"><p>Best Rating: </p></div>
-  <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"><p>Lowest Rating: </p></div>
-<% end %>
+          <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"><p>Best Rating: </p></div>
+          <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"><p>Lowest Rating: </p></div>
+        <% end %>
 
 
 
