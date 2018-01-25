@@ -7,4 +7,4 @@ class UserRegistrationsController < Devise::RegistrationsController
     end
   end
 
-end 
+end
