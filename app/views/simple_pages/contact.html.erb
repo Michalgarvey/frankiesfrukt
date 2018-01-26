@@ -1,40 +1,62 @@
-<div class="contactpage">
-<h1>Contact Frankie's Frukt</h1>
-<p>Location: SoFo, Stockholm<br>Email: Frankie@frukt.se<br>Phone: 0409 24 63 75</p>
-<br><p>We currently deliver to the greater Stockholmn area.  We are always looking to expand, so if you're outside of our areas, please get in touch and let us know where we can find you.</p><br><br><br>
+<div class="contactpage container-fluid">
+<h1>Get in touch with Frankie</h1>
 
-<div class="col-sm-2 col-lg-3">
-</div>
-  <div class="col-sm-8 col-lg-6">
-<h2>Get in Touch</h2>
+<div class="row">
+
+<div class="col-sm-1 col-md-1">
+  </div>
+
+  <div class="col-sm-12 col-md-4">
+
+<p><br><br>Location: <strong>SoFo, Stockholm</strong><br>Email: <strong>Frankie@frankiesfrukt.se</strong><br>Phone: <strong>0789 533 5115</strong></p>
+<br><br><p>If you'd like to get in touch for any reason, please provide us with your details here and we will get back to you right away.<br><br>We currently deliver to the greater Stockholmn area.  We are always looking to expand, so if you're outside of our areas, please get in touch and let us know where we can find you.</p><br><br><br>
+
+</div><!--col-sm-2 col-lg-3-->
+<div class="col-sm-0 col-md-1">
+  </div>
+
+
+<div class="col-sm-12 col-md-5">
 <%= flash[:notice] %>
 <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
-<div class="row">
+
   <div class="form-group">
     <%= form.label :name %>
     <%= form.text_field :name, class: "form-control", required: true, placeholder: "Enter Name" %>
-  </div>
+  </div><!--form-group-->
   <br>
   <div class="form-group">
     <%= form.label :email %>
     <%= form.email_field :email, class: "form-control", type:'email', required: true, placeholder: "Enter Email" %>
-  </div>
+  </div><!--form-group-->
   <br>
   <div class="form-group">
     <%= form.label :message %>
     <%= form.text_area :message, class: "form-control", required: true, minlength: 20, maxlength: 250, placeholder: "Enter Message", rows: 5 %>
-  </div>
-</div>
+  </div><!--form-group-->
+
+
+
+
 <br>
-<%= form.submit "Send", class: "form_label" %>
-<% end %>
-</div>
-<div class="col-sm-2">
-</div>
+  <div id="contact-submit-btn">
+    <%= form.submit "Send", class: "form_label" %>
+    <% end %>
+  </div>
+</div><!--col-sm-2 col-lg-5-->
+
+
+<div class="col-sm-0 col-md-1">
+  </div>
+
+</div><!--row-->
+
+
+
 
 
 <div class="map">
   <iframe class="map" width="100%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAMwRCtEHK9M1LV-HAxeWlhM5RrP9-0aJ0&zoom=12&center=59.3118%2C18.0663" allowfullscreen></iframe>
-</div>
+</div><!--map-->
 
 </div><!--endcontactpage-->

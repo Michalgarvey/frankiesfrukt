@@ -38,10 +38,9 @@
 
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
+                <li><%= link_to "Shop", products_path %></li>
                 <li><%= link_to "About Frankie", simple_pages_about_path %></li>
                 <li><%= link_to "Contact Frankie", simple_pages_contact_path %></li>
-                <li><%= link_to "Shop", products_path %></li>
-                <li><%= link_to "Other", simple_pages_other_path %></li>
                 <li>
                   <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
                     <%= form.label :q, 'Search for:' %>
