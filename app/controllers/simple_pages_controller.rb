@@ -8,10 +8,9 @@ class SimplePagesController < ApplicationController
     @name = params[:name]
     @email = params[:email]
     @message = params[:message]
-    ActionMailer::Base.mail(from: @email,
-      to: 'michalgarvey@gmail.com',
-      subject: "#{@name} got in touch",
-      body: @message).deliver_now
+
+    UserMailer.contact_form(@name, @email, @message).deliver_now
+
   end
 
 end

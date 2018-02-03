@@ -41,12 +41,11 @@
                 <li><%= link_to "Shop", products_path %></li>
                 <li><%= link_to "About Frankie", simple_pages_about_path %></li>
                 <li><%= link_to "Contact Frankie", simple_pages_contact_path %></li>
-                <li>
+                <li><div class="search">
                   <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-                    <%= form.label :q, 'Search for:' %>
-                    <%= form.text_field :q, id: 'q', value: params[:q] %>
-                    <%= form.submit 'Search' %>
-                  <% end %>
+                    <%= form.text_field :q, id: 'q', value: params[:q], class: "search-field", placeholder: 'Looking for Something?' %>
+                    <%= form.submit 'Search', class: "search-btn" %>
+                  <% end %></div>
                 </li>
               </ul>
               <ul class="nav pull-right">
