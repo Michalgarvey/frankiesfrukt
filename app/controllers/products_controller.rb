@@ -9,8 +9,10 @@ class ProductsController < ApplicationController
       @products = Product.search(search_term)
       #return our filtered list here
     else
-      @products = Product.paginate(:page => params[:page], :per_page => 12)
+      @products = Product.all
     end
+
+    @products = @products.paginate(:page => params[:page], :per_page => 12)
 
   end
 
