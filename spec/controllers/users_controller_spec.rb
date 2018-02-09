@@ -30,7 +30,7 @@ describe UsersController, type: :controller do
       context 'User cannot access user2s details' do
         it 'loads correct user details' do
           get :show, params: { id: @user2.id }
-          expect(response).to redirect_to(root_path)
+          expect(response).to redirect_to(new_user_session_path)
 
         end
       end
