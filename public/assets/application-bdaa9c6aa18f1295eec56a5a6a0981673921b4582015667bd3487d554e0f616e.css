@@ -1,0 +1,459 @@
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
+/* line 5, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/orders.scss */
+p {
+  text-align: center;
+  color: #50514F;
+}
+/* line 7, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+input {
+  background-color: #93B7BE;
+  color: #50514F;
+  padding: 0;
+  border: 0;
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+/* line 16, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+textarea {
+  background-color: #93B7BE;
+  color: #50514F;
+  padding: 0;
+  border: 0;
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+/* line 25, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+label {
+  color: #0082B4;
+  font: verdana, arial, helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* line 34, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.row {
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 39, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.form-control {
+  background-color: #93B7BE;
+  color: #50514F;
+  width: 100%;
+}
+
+/* line 45, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.container-fluid {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* line 50, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.btn-default {
+  margin-bottom: 20px;
+}
+
+/* line 54, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.pull-right {
+  margin-right: 20px;
+}
+
+/* line 58, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+h3 {
+  text-align: center;
+  color: #0082B4;
+}
+
+/* line 63, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+button {
+  max-width: 20%;
+}
+
+/* line 68, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.rated, .rating {
+  text-align: center;
+}
+
+/* line 72, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+h2 {
+  padding-top: 30px;
+}
+
+/* line 76, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/products.scss */
+.stripe {
+  text-align: center;
+}
+/* line 1, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: "Alef", Tahoma, sans-serif;
+  color: #0082B4;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+/* line 15, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  color: #93B7BE;
+  font-family: "Alef", Tahoma, sans-serif;
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* line 22, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+body {
+  background-image: url(/assets/background-d75c292312c47453cab5a3e0d30bc57250b0af8c8cec04511b10bc4a7d6a7fd9.jpg);
+}
+
+/* line 26, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  background-color: #424753;
+  font-family: Tahoma;
+  text-transform: uppercase;
+  border: 0;
+  letter-spacing: 2px;
+}
+
+/* line 34, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #D7DAE5;
+}
+
+/* line 39, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #0082B4;
+}
+
+/* line 43, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #D7DAE5;
+}
+
+/* line 47, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+a {
+  color: #50514F;
+}
+
+/* line 52, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  color: #0082B4;
+}
+
+/* line 56, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.projectName {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  letter-spacing: 3px;
+  font-family: 'Cookie', cursive;
+  color: #0082B4;
+  padding-top: 20px;
+  text-transform: none;
+  font-weight: 800;
+  font-size: 55px;
+  letter-spacing: 7px;
+}
+
+/* line 71, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+footer {
+  text-align: center;
+  color: #50514F;
+  background-color: #0082B4;
+  font-weight: 800;
+  height: 80px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* line 83, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.footer-copyright p {
+  padding-top: 22px;
+}
+
+/* line 87, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+p {
+  margin: 0 50px;
+}
+
+/* line 91, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.contactpage p {
+  text-align: center;
+}
+
+/* line 97, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+a:visited {
+  color: #0082B4;
+}
+
+/* line 101, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.projectName:hover {
+  color: #0082B4;
+}
+
+/* line 106, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.panel {
+  background-color: none;
+}
+
+/* line 110, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.nav > form {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+/* line 115, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.nav > li > a {
+  padding: 25px 15px;
+}
+
+/* line 119, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 124, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.content {
+  min-height: 100%;
+}
+
+/* line 127, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+/* line 133, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner img {
+  width: 40%;
+  margin: 0 30%;
+}
+
+/* line 138, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.alert-info {
+  margin-top: 150px;
+  background-color: #0082B4;
+  color: #D7DAE5;
+  font-weight: 800;
+}
+
+/* line 146, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle {
+  border-color: #424753;
+}
+
+/* line 150, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #424753;
+}
+
+/* line 154, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #0082B4;
+}
+
+/* line 158, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.button .navbar-toggle {
+  color: pink;
+}
+
+/* line 163, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.projectName a:hover {
+  background-color: #424753;
+}
+
+/* line 168, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+#contact-submit-btn, #welcome-back-btn, #sign-up-btn, #update-btn, #cancel-btn {
+  width: 30%;
+  margin: auto;
+}
+
+/* line 173, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.row {
+  margin: 0;
+}
+
+/* line 177, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+em {
+  color: #0082B4;
+}
+
+/* line 181, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.carousel-control:hover {
+  background-color: transparent;
+  color: #0082B4;
+}
+
+/* line 189, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/simple_pages.scss */
+.search {
+  padding: 10px 0;
+  margin-right: 55px;
+}
+/* line 5, /Users/michalgarvey/Documents/ff/app/assets/stylesheets/users.scss */
+.showusers p {
+  margin-top: 115px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
