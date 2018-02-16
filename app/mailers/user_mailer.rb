@@ -11,7 +11,7 @@ class UserMailer < ApplicationMailer
             subject: "#{name} got in touch!")
   end
 
-  def welcome(params)
+  def welcome(user)
     @user = user
     @appname = "Frankie's Frukt"
     mail( to: user.email,

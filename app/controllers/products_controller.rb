@@ -4,14 +4,13 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    
     if params[:q]
       search_term = params[:q]
       @products = Product.search(search_term)
-      logger.debug "Product: #{@products}"
       #return our filtered list here
     else
       @products = Product.all
-      logger.debug "Product: #{@products}"
     end
 
     @products = @products.paginate(:page => params[:page], :per_page => 12)

@@ -14,7 +14,7 @@ class PaymentsController < ApplicationController
         currency: "sek",
         description: params[:stripeEmail],
         source: token,
-        receipt_email: @user.email
+        receipt_email: params[:stripeEmail]
       )
 
       if charge.paid
