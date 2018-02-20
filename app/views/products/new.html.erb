@@ -1,5 +1,14 @@
-<h1>Add Products</h1>
+<% if signed_in? && current_user.admin? %>
 
-<%= render 'form', product: @product %>
+  <h1>Add Products</h1>
 
-<%= link_to 'Back', products_path %>
+  <%= render 'form', product: @product %>
+
+  <%= link_to 'Back', products_path %>
+
+<% else %>
+
+<% link_to root_path %>
+
+
+<% end %>

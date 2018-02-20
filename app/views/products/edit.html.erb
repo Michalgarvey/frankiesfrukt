@@ -1,6 +1,13 @@
-<h1>Update Products</h1>
 
-<%= render 'form', product: @product %>
+<% if signed_in? && current_user.admin? %>
 
-<%= link_to 'Show', @product %> |
-<%= link_to 'Back', products_path %>
+  <h1>Update Products</h1>
+
+  <%= render 'form', product: @product %>
+
+  <%= link_to 'Show', @product %> |
+  <%= link_to 'Back', products_path %>
+
+
+
+<% end %>
