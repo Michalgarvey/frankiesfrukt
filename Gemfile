@@ -80,3 +80,5 @@ gem 'stripe'
 gem 'elevatezoom-rails'
 
 gem 'chosen-rails'
+
+gem 'dalli'

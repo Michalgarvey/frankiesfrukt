@@ -1,7 +1,19 @@
 <div class="col-sm-6 col-md-3">
   <% if product.image_url %>
+    <% logger.debug "Product: #{product.name}" %>
     <%= link_to image_tag(product.image_url, class: "img-responsive", size: '300x300'), product %>
   <% end %>
-  <a href="#"><h3 style="text-align: center;"><%= link_to product.name, product %></h3></a>
-  <p style="text-align: center;"><strong>Kr<%= product.price %></strong></p>
+  <a href="#">
+    <h3 style="text-align: center;">
+      <%= link_to product.name, product %>
+    </h3>
+  </a>
+  <p style="text-align: center;">
+    <strong>Kr
+      <%= product.price %>
+    </strong>
+  </p>
 </div>
+
+
+<!-- #{@product.name} -->
