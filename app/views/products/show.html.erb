@@ -57,13 +57,15 @@
         <p>Average Rating: <div class="rated" id= "average-rating" data-score="<%= @product.average_rating %>"></div>
         </p>
 
-      
+
 
         <% if @product.comments %>
           <div class="rated" data-score="<%= @product.highest_rating_comment.try(:rating) %>"><p>Best Rating: </p></div>
           <div class="rated" data-score="<%= @product.lowest_rating_comment.try(:rating) %>"><p>Lowest Rating: </p></div>
         <% end %>
 
+
+        <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
       <%= render 'comments' %>
 
