@@ -82,3 +82,5 @@ gem 'elevatezoom-rails'
 gem 'chosen-rails'
 
 gem 'dalli'
+
+gem 'redis-rails'
