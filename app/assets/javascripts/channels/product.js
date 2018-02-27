@@ -7,11 +7,11 @@ App.product = App.cable.subscriptions.create("ProductChannel", {
     // Called when the subscription has been terminated by the server
   },
 
-  received: function() {
+  received: function(data) {
     //received: function(data) {
     // Called when there's incoming data on the websocket for this channel
     $(".alert.alert-info").show();
-    $('.product0-reviews').prepend(data.comment);
+    $('.product-reviews').prepend(data.comment);
     $("#average-rating").attr('data-score', data.average_rating);
     refreshRating();
   },
