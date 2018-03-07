@@ -80,3 +80,12 @@ h2 {
 .badge {
   margin: 4px 0;
 }
+
+.thumbnail-image {
+    width: 100%;
+    display: inline-block;
+    height: 200px;
+    background-size: cover;
+    background-position: top center;
+    border: none;
+}
