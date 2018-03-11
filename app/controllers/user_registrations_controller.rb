@@ -7,13 +7,12 @@ class UserRegistrationsController < Devise::RegistrationsController
     end
   end
 
-  def welcome
-    @name = params[:name]
-    @email = params[:email]
-    ActionMailer::Base.mail(from: "frankie@frankiesfrukt.se",
-      to: email,
-      subject: "Welcome to #{@appname}!",
-      body: welcome).deliver_now
+  
+
+private
+
+  def sign_up_params
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation)
   end
 
 end

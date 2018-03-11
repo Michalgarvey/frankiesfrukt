@@ -3,7 +3,9 @@ class Product < ApplicationRecord
   validates :description, presence: true
   validates :image_url, presence: true
   validates :price, presence: true
+
   has_many :comments
+
   def self.search(search_term)
     if Rails.env.production?
       Product.where("name ilike ?", "%#{search_term}%")
@@ -32,6 +34,6 @@ class Product < ApplicationRecord
     $redis.incr("product:#{id}")
   end
 
-  
+
 
 end

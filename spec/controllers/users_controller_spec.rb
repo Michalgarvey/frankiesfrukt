@@ -31,9 +31,9 @@ describe UsersController, type: :controller do
         it 'loads correct user details' do
           get :show, params: { id: @user2.id }
           expect(response).to redirect_to(new_user_session_path)
-
         end
       end
+
     end
 
 end

@@ -15,7 +15,8 @@ class UserMailer < ApplicationMailer
     @user = user
     @appname = "Frankie's Frukt"
     mail( to: user.email,
-          subject: "Welcome to #{@appname}!")
+          subject: "Welcome to #{@appname}!"
+          body: welcome).deliver_now
   end
 
 
