@@ -13,9 +13,17 @@ class UserMailer < ApplicationMailer
 
   def welcome(user)
     @user = user
-    @appname = "Frankie's Frukt"
+    @appname = "Frankies Frukt"
     mail( to: user.email,
           subject: "Welcome to #{@appname}!")
+  end
+
+  def payment_recieved(user, product)
+    @user = user
+    @appname = "Frankies Frukt"
+    @product = product.name
+    mail( to: user.email,
+          subject: "Thanks for your order with #{@appname}!")
   end
 
 

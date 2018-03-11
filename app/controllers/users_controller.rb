@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    @users = @users.paginate(:page => params[:page], :per_page => 20)
   end
 
   # GET /users/1
@@ -26,7 +27,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    byebug
+    # byebug
     @user = User.new(user_params)
 
     respond_to do |format|

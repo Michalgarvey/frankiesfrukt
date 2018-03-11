@@ -19,7 +19,11 @@ class PaymentsController < ApplicationController
 
       if charge.paid
         Order.create(product_id: @product.id, user_id: @user.id, total: @product.price)
+        flash[:success] = "Thanks, your payment was processed successfully"
+        UserMailer.payment_recieved(@user, @product).deliver_now
       end
+
+
 
     rescue Stripe::CardError => e
       # The card has been declined

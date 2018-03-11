@@ -1,0 +1,19 @@
+
+  <div class="col-sm-6 col-md-3">
+    <h2>
+      User # <%= user.id %>:
+
+    </h2>
+
+    <p>
+      <%= user.first_name %>
+      <%= user.last_name %><br>
+      <%= link_to user.email %>
+    </p>
+
+    <p>
+      <%= link_to 'Show', user %>
+      <%= link_to 'Edit', edit_user_path(user) %>
+      <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
+  </div><!-- /col-->
